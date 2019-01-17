@@ -65,13 +65,13 @@ Blockly.Msg.RASPBERRYPI_PIN_IRQ_TOOLTIP = "The event_detected() function is desi
 
 
 
-Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE1        = "Servo pin"
-Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE2        = "set angle"
-Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE3        = "time"
-Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TOOLTIP       = "Sets the angle of the servo:\n\
+Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE1 = "Servo pin"
+Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE2 = "set angle"
+Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE3 = "time"
+Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TOOLTIP = "Sets the angle of the servo:\n\
         angle is the angle to move to in degrees.\n\
         time is the number of milliseconds to take to get to the specified angle. If omitted, then the servo moves as quickly as possible to its new position."
-        
+
 
 
 Blockly.Msg.RASPBERRYPI_I2C_IS_READY_TITLE1 = "get I2C  status";
@@ -101,3 +101,12 @@ Blockly.Msg.RASPBERRYPI_I2C_MEM_READ_TOOLTIP = "Returns the read data. ";
 Blockly.Msg.RASPBERRYPI_SPI_TITLE1 = "SPI  bus";
 Blockly.Msg.RASPBERRYPI_SPI_TITLE2 = "device";
 Blockly.Msg.RASPBERRYPI_SPI_TOOLTIP = "Read I2C";
+
+
+Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_TITLE1 = "PWM set pluse width value";
+Blockly.Msg.RASPBERRYPI_SPI_TOOLTIP = "Set PWM pluse width value(0 ~ 4095).";
+
+
+Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE1 = "PWM set pluse width precentage";
+Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE2 = "%";
+Blockly.Msg.RASPBERRYPI_SPI_TOOLTIP = "Set PWM pluse width precentage(0% ~ 100%).";

@@ -96,6 +96,18 @@ RaspberryPi.toolboxText =
     '    <block type="raspberrypi_i2c_mem_write"></block>' +
     '    <block type="raspberrypi_i2c_mem_read"></block>' +
 
+    '    <block type="raspberrypi_pwm_pulse_width">' +
+    '      <value name="value">' +
+    '        <shadow type="math_number">' +
+    '        </shadow>' +
+    '      </value>' +
+    '    </block>' +
+    '    <block type="raspberrypi_pwm_pulse_width_precentage">' +
+    '      <value name="value">' +
+    '        <shadow type="math_number">' +
+    '        </shadow>' +
+    '      </value>' +
+    '    </block>' +
 
     '  </category>' +
 
