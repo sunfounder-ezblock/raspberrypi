@@ -5,6 +5,7 @@ goog.provide('Blockly.Msg.raspberrypi.zh-hans');
 goog.require('Blockly.Msg');
 
 MSG.catRaspberryPi = "树莓派";
+MSG.catSensorKitForPi = "树莓派传感器套件";
 
 MSG.raspberrypi_description = "是一款基于Linux的单片机计算机。它由英国的树莓派基金会所开发";
 

@@ -5,6 +5,7 @@ goog.provide('Blockly.Msg.raspberrypi.en');
 goog.require('Blockly.Msg');
 
 MSG.catRaspberryPi = "Raspberry Pi";
+MSG.catSensorKitForPi = "SensorKit For Pi";
 
 MSG.raspberrypi_description = "The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote the teaching of basic computer science in schools and in developing countries."
 
