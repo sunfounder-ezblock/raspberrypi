@@ -16,7 +16,6 @@ RaspberryPi.width = 87;
 RaspberryPi.height = 58;
 RaspberryPi.pinWidth = 8;
 RaspberryPi.pinHeight = 8;
-RaspberryPi.active = 'active';
 RaspberryPi.examples = {};
 RaspberryPi.examplesHasKit = {};
 RaspberryPi.tutorials = {};
@@ -487,16 +486,3 @@ RaspberryPi.init = function() {
     RaspberryPi.kitName = MSG.catSensorKitForPi;
     RaspberryPi.description = MSG.raspberrypi_description;
 }
-
-// RaspberryPi.ab2str = function (buf) {
-// 	return String.fromCharGUI.apply(null, new Uint8Array(buf));
-// }
-
-// RaspberryPi.str2ab = function (str) {
-// 	var buf = new ArrayBuffer(str.length); // 2 bytes for each char
-// 	var bufView = new Uint8Array(buf);
-// 	for (var i = 0, strLen = str.length; i < strLen; i++) {
-// 		bufView[i] = str.charGUIAt(i);
-// 	}
-// 	return bufView;
-// }
