@@ -64,7 +64,7 @@ Blockly.Constants.RaspberryPi.taskmgr = [
 ];
 // system setup
 Blockly.Blocks['raspberrypi_connect_wifi'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput()
             .setAlign(Blockly.ALIGN_RIGHT)
             .appendField(Blockly.Msg.RASPBERRYPI_CONNECT_WIFI_TITLE1);
@@ -90,7 +90,7 @@ Blockly.Blocks['raspberrypi_connect_wifi'] = {
 };
 
 Blockly.Blocks['raspberrypi_taskmgr'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput()
             .appendField(Blockly.Msg.RASPBERRYPI_TASKMGR_TITLE1)
             .appendField(
@@ -107,7 +107,7 @@ Blockly.Blocks['raspberrypi_taskmgr'] = {
 
 // ---- raspberrypi constants blocks ---- //
 Blockly.Blocks['raspberrypi_digital_pin'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput()
             // .appendField(Blockly.Msg.RASPBERRYPI_DIGITAL_PIN_TITLE)
             .appendField(
@@ -123,7 +123,7 @@ Blockly.Blocks['raspberrypi_digital_pin'] = {
 };
 
 Blockly.Blocks['raspberrypi_analog_pin'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput()
             // .appendField(Blockly.Msg.RASPBERRYPI_ANALOG_PIN_TITLE)
             .appendField(
@@ -139,7 +139,7 @@ Blockly.Blocks['raspberrypi_analog_pin'] = {
 };
 
 Blockly.Blocks['raspberrypi_device_pin'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput().appendField(
             new Blockly.FieldDropdown(Blockly.Constants.RaspberryPi.DEVICE_PINS),
             'pin');
@@ -152,7 +152,7 @@ Blockly.Blocks['raspberrypi_device_pin'] = {
 };
 
 Blockly.Blocks['raspberrypi_pwm_pin'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput()
             // .appendField(Blockly.Msg.RASPBERRYPI_PWM_PIN_TITLE)
             .appendField(
@@ -167,7 +167,7 @@ Blockly.Blocks['raspberrypi_pwm_pin'] = {
 };
 
 Blockly.Blocks['raspberrypi_pin_irq_trigger'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput().appendField(
             Blockly.Msg.RASPBERRYPI_PIN_IRQ_TRIGGER);
         this.appendDummyInput().appendField(
@@ -184,7 +184,7 @@ Blockly.Blocks['raspberrypi_pin_irq_trigger'] = {
 
 // ---- Pin functions blocks ---- //
 Blockly.Blocks['raspberrypi_pin_set_value'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('pin')
             .setCheck(['Digital_Pin', 'PWM_Pin'])
             .appendField(Blockly.Msg.RASPBERRYPI_PIN_SET_VALUE_TITLE1);
@@ -200,7 +200,7 @@ Blockly.Blocks['raspberrypi_pin_set_value'] = {
 };
 
 Blockly.Blocks['raspberrypi_pin_get_value'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('pin')
             .setCheck(['Digital_Pin', 'Analog_Pin', 'Device_Pin'])
             .appendField(Blockly.Msg.RASPBERRYPI_PIN_GET_VALUE_TITLE1);
@@ -216,7 +216,7 @@ Blockly.Blocks['raspberrypi_pin_get_value'] = {
 
 
 Blockly.Blocks['raspberrypi_pin_on'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('pin')
             .setCheck('Digital_Pin')
             .appendField(Blockly.Msg.RASPBERRYPI_PIN_ON_TITLE1);
@@ -230,7 +230,7 @@ Blockly.Blocks['raspberrypi_pin_on'] = {
 };
 
 Blockly.Blocks['raspberrypi_pin_off'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('pin')
             .setCheck('Digital_Pin')
             .appendField(Blockly.Msg.RASPBERRYPI_PIN_OFF_TITLE1);
@@ -244,7 +244,7 @@ Blockly.Blocks['raspberrypi_pin_off'] = {
 };
 
 Blockly.Blocks['raspberrypi_pin_irq'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput().appendField(Blockly.Msg.RASPBERRYPI_PIN_IRQ_TITLE1);
         this.appendValueInput('pin')
             .setCheck('Digital_Pin')
@@ -265,7 +265,7 @@ Blockly.Blocks['raspberrypi_pin_irq'] = {
 };
 
 Blockly.Blocks['raspberrypi_servo_set_angle'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('servo_pin')
             .setCheck('PWM_Pin')
             .appendField(Blockly.Msg.RASPBERRYPI_SERVO_SET_ANGLE_TITLE1);
@@ -283,7 +283,7 @@ Blockly.Blocks['raspberrypi_servo_set_angle'] = {
 
 // I2c  Spi
 Blockly.Blocks['raspberrypi_spi'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('bus')
             .setCheck(null)
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -301,7 +301,7 @@ Blockly.Blocks['raspberrypi_spi'] = {
 };
 
 Blockly.Blocks['raspberrypi_i2c_is_ready'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('address')
             .setCheck('math_hex')
             .appendField(Blockly.Msg.RASPBERRYPI_I2C_IS_READY_TITLE1);
@@ -315,7 +315,7 @@ Blockly.Blocks['raspberrypi_i2c_is_ready'] = {
 };
 
 Blockly.Blocks['raspberrypi_i2c_scan'] = {
-    init: function() {
+    init: function () {
         this.appendDummyInput().appendField(
             Blockly.Msg.RASPBERRYPI_I2C_SCAN_TITLE1);
         this.setOutput(true, null);
@@ -327,7 +327,7 @@ Blockly.Blocks['raspberrypi_i2c_scan'] = {
 
 
 Blockly.Blocks['raspberrypi_i2c_send'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('send')
             .setCheck(null)
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -345,7 +345,7 @@ Blockly.Blocks['raspberrypi_i2c_send'] = {
 };
 
 Blockly.Blocks['raspberrypi_i2c_recv'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('recv')
             .setCheck(null)
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -363,7 +363,7 @@ Blockly.Blocks['raspberrypi_i2c_recv'] = {
 };
 
 Blockly.Blocks['raspberrypi_i2c_mem_write'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('data')
             .setCheck(null)
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -386,7 +386,7 @@ Blockly.Blocks['raspberrypi_i2c_mem_write'] = {
 
 
 Blockly.Blocks['raspberrypi_i2c_mem_read'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('data')
             .setCheck(null)
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -410,7 +410,7 @@ Blockly.Blocks['raspberrypi_i2c_mem_read'] = {
 
 // PWM
 Blockly.Blocks['raspberrypi_pwm_pulse_width'] = {
-    init: function() {
+    init: function () {
         this.appendValueInput('value')
             .setCheck('Number')
             .appendField(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_TITLE1);
@@ -424,16 +424,17 @@ Blockly.Blocks['raspberrypi_pwm_pulse_width'] = {
 };
 
 Blockly.Blocks['raspberrypi_pwm_pulse_width_precentage'] = {
-        init: function() {
-            this.appendValueInput('value')
-                .setCheck('Number')
-                .appendField(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE1);
-            this.appendDummyInput()
-                .appendField(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE2);
-            this.setInputsInline(true);
-            this.setPreviousStatement(true, null);
-            this.setNextStatement(true, null);
-            this.setColour(Blockly.Constants.RaspberryPi.RGB);
-            this.setTooltip(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TOOLTIP);
-            this.setHelpUrl('');
-        }
+    init: function () {
+        this.appendValueInput('value')
+            .setCheck('Number')
+            .appendField(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE1);
+        this.appendDummyInput()
+            .appendField(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE2);
+        this.setInputsInline(true);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(Blockly.Constants.RaspberryPi.RGB);
+        this.setTooltip(Blockly.Msg.RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TOOLTIP);
+        this.setHelpUrl('');
+    }
+};
