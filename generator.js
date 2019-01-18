@@ -14,7 +14,7 @@ Blockly.Python['raspberrypi_digital_pin'] = function(block) {
     var pin = block.getFieldValue('pin');
 
     Blockly.Python.definitions_['import_raspberrypi_pin'] =
-            'from raspberrypi import Pin';
+        'from raspberrypi import Pin';
 
     var code = '';
     code += pin;
@@ -25,7 +25,7 @@ Blockly.Python['raspberrypi_analog_pin'] = function(block) {
     var pin = block.getFieldValue('pin');
 
     Blockly.Python.definitions_['import_raspberrypi_pin'] =
-            'from raspberrypi import ADC';
+        'from raspberrypi import ADC';
 
     var code = '';
     code += pin;
@@ -68,7 +68,7 @@ Blockly.Python['raspberrypi_pin_set_value'] = function(block) {
         var obj = 'Pin(' + pin + ')';
         var setValue = 'value';
     } else if (pin.startsWith('"P')) {
-        Blockly.Python.definitions_['import_raspberrypi_pwm'] ='from raspberrypi import PWM';
+        Blockly.Python.definitions_['import_raspberrypi_pwm'] = 'from raspberrypi import PWM';
         var obj = 'PWM(' + pin + ')';
         var setValue = 'pulse_width';
     }
@@ -80,7 +80,7 @@ Blockly.Python['raspberrypi_pin_set_value'] = function(block) {
 
 Blockly.Python['raspberrypi_pin_get_value'] = function(block) {
     var pin =
-            Blockly.Python.valueToCode(block, 'pin', Blockly.Python.ORDER_ATOMIC);
+        Blockly.Python.valueToCode(block, 'pin', Blockly.Python.ORDER_ATOMIC);
 
     if (pin.startsWith('"D') || (pin in ['LED', 'SW'])) {
         Blockly.Python.definitions_['import_raspberrypi_pin'] = 'from raspberrypi import Pin';
@@ -168,7 +168,7 @@ Blockly.Python['raspberrypi_connect_wifi'] = function(block) {
 // I2C  SPI
 Blockly.Python['raspberrypi_write_i2c'] = function(block) {
     var address = Blockly.Python.valueToCode(block, 'address', Blockly.Python.ORDER_ATOMIC);
-    var Register_address = Blockly.Python.valueToCode( block, 'Register_address', Blockly.Python.ORDER_ATOMIC);
+    var Register_address = Blockly.Python.valueToCode(block, 'Register_address', Blockly.Python.ORDER_ATOMIC);
 
     var code = '';
     var code = 'I2C().send(' + address + ', ' + Register_address + ')\n';
@@ -261,3 +261,20 @@ Blockly.Python['raspberrypi_i2c_mem_read'] = function(block) {
     var code = 'I2C().mem_read(' + data + ', ' + addr + ', ' + memaddr + ')\n';
     return [code, Blockly.Python.ORDER_NONE];
 };
+
+
+
+// PWM
+Blockly.Python['raspberrypi_pwm_pulse_width'] = function(block) {
+    var value = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_ATOMIC);
+    var code = '';
+    var code = 'pulse_width(' + value + ')\n';
+    return code;
+};
+
+
+Blockly.Python['raspberrypi_pwm_pulse_width_precentage'] = function(block) {
+        var value = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_ATOMIC);
+        var code = '';
+        var code = 'pulse_width_percentage(' + value + ')\n';
+        return code;

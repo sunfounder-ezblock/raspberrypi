@@ -58,14 +58,12 @@ Local['en'].RASPBERRYPI_PIN_IRQ_TOOLTIP = "The event_detected() function is desi
         but unlike polling it is not going to miss the change in state of an input while the CPU is busy working on other things. ";
 
 
-
-Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE1        = "Servo pin"
-Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE2        = "set angle"
-Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE3        = "time"
-Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TOOLTIP       = "Sets the angle of the servo:\n\
+Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE1 = "Servo pin"
+Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE2 = "set angle"
+Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TITLE3 = "time"
+Local['en'].RASPBERRYPI_SERVO_SET_ANGLE_TOOLTIP = "Sets the angle of the servo:\n\
         angle is the angle to move to in degrees.\n\
         time is the number of milliseconds to take to get to the specified angle. If omitted, then the servo moves as quickly as possible to its new position."
-        
 
 
 Local['en'].RASPBERRYPI_I2C_IS_READY_TITLE1 = "get I2C  status";
@@ -95,3 +93,12 @@ Local['en'].RASPBERRYPI_I2C_MEM_READ_TOOLTIP = "Returns the read data. ";
 Local['en'].RASPBERRYPI_SPI_TITLE1 = "SPI  bus";
 Local['en'].RASPBERRYPI_SPI_TITLE2 = "device";
 Local['en'].RASPBERRYPI_SPI_TOOLTIP = "Read I2C";
+
+
+Local['en'].RASPBERRYPI_PWM_PULSE_WIDTH_TITLE1 = "PWM set pluse width value";
+Local['en'].RASPBERRYPI_SPI_TOOLTIP = "Set PWM pluse width value(0 ~ 4095).";
+
+
+Local['en'].RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE1 = "PWM set pluse width precentage";
+Local['en'].RASPBERRYPI_PWM_PULSE_WIDTH_PRECENTAGE_TITLE2 = "%";
+Local['en'].RASPBERRYPI_SPI_TOOLTIP = "Set PWM pluse width precentage(0% ~ 100%).";
